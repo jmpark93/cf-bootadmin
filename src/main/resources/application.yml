@@ -1,0 +1,10 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+  boot:
+    admin:
+      ui:
+        brand: <img src="assets/img/icon-spring-boot-admin.svg"><span>Spring Boot Admin for Cloud Foundry</span>
+        title: Spring Boot Admin for Cloud Foundry
