@@ -3,8 +3,13 @@ spring:
     user:
       name: admin
       password: admin
+
   boot:
     admin:
       ui:
         brand: <img src="assets/img/icon-spring-boot-admin.svg"><span>Spring Boot Admin for Cloud Foundry</span>
         title: Spring Boot Admin for Cloud Foundry
+      notify:
+        slack:
+          webhook-url: https://hooks.slack.com/services/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
+          channel: kpaas-ta
