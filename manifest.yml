@@ -1,10 +1,10 @@
 ---
 applications:
-  - name: BootAdmin
+  - name: msa-bootadmin
     memory: 1G
     instances: 1
     buildpacks:
-      - java-buildpack
+      - java_buildpack
     path: ./build/libs/bootadmin-0.0.1-SNAPSHOT.jar
     env:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
@@ -14,5 +14,5 @@ applications:
       SLACK_CHANNEL: kpaas-ta
       SLACK_USERNAME: JMWorks
     routes:
-      - route: bootadmin.cf.intl
-      - route: bootadmin.kpaasta.kr
+      - route: msa-bootadmin.cf.intl
+      - route: msa-bootadmin.kpaasta.io

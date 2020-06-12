@@ -10,15 +10,16 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration(proxyBeanMethods = false)
-public class SecuritySecureConfig extends WebSecurityConfigurerAdapter {
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     private final AdminServerProperties adminServer;
 
-    public SecuritySecureConfig(AdminServerProperties adminServer) {
+    public WebSecurityConfig(AdminServerProperties adminServer) {
         this.adminServer = adminServer;
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+
         SavedRequestAwareAuthenticationSuccessHandler successHandler = new SavedRequestAwareAuthenticationSuccessHandler();
         successHandler.setTargetUrlParameter("redirectTo");
         successHandler.setDefaultTargetUrl(this.adminServer.path("/"));

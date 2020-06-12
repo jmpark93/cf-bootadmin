@@ -34,10 +34,11 @@ dependencyManagement {
     }
 }
 
+springBoot {
+    buildInfo()
+}
+
 test {
     useJUnitPlatform()
 }
 
-springBoot {
-    buildInfo()
-}
