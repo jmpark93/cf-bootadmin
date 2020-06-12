@@ -10,7 +10,7 @@ applications:
       JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+}}'
       ADMIN_ID: admin
       ADMIN_PWD: koscom!234
-      SLACK_WEBHOOK: https://hooks.slack.com/services/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
+      SLACK_WEBHOOK: https://hooks.slack.com/services/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
       SLACK_CHANNEL: kpaas-ta
       SLACK_USERNAME: JMWorks
     routes:
