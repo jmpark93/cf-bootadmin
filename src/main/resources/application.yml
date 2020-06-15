@@ -12,6 +12,8 @@ spring:
       ui:
         brand: <img src="assets/img/icon-spring-boot-admin.svg"><span> ${vcap.application.application_name:Spring Boot Admin} </span>
         title: ${vcap.application.application_name:Spring Boot Admin}
+      monitor:
+        default-timeout: 30000ms
       notify:
         slack:
           webhook-url: ${SLACK_WEBHOOK:}
