@@ -1,12 +1,12 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.5.RELEASE'
+    id 'org.springframework.boot' version '2.3.2.RELEASE'
     id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
     id 'war'
 }
 
 group = 'koscom.cf.bootadmin'
-version = '0.0.2'
+version = '0.0.3'
 sourceCompatibility = '11'
 
 repositories {
@@ -14,7 +14,7 @@ repositories {
 }
 
 ext {
-    set('springBootAdminVersion', "2.2.3")
+    set('springBootAdminVersion', "2.2.4")
 }
 
 dependencies {
