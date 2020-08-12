@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'koscom.cf.bootadmin'
-version = '0.0.3'
+version = '0.0.4'
 sourceCompatibility = '11'
 
 repositories {
@@ -14,14 +14,16 @@ repositories {
 }
 
 ext {
-    set('springBootAdminVersion', "2.2.4")
+    set('springBootAdminVersion', "2.3.0")
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'de.codecentric:spring-boot-admin-starter-server'
+
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
@@ -41,4 +43,3 @@ springBoot {
 test {
     useJUnitPlatform()
 }
-
